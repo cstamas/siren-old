@@ -7,6 +7,7 @@
     <groupId>org.sindice.siren</groupId>
     <artifactId>siren-parent</artifactId>
     <version>0.2.1-SNAPSHOT</version>
+    <relativePath>../siren-parent</relativePath> 
   </parent>
   
   <groupId>org.sindice.siren</groupId>
@@ -46,6 +47,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
+        <version>1.2</version>
         <executions>
           <execution>
             <id>ntriple-classgen-task</id>
@@ -91,9 +93,8 @@
       Generate Lexer Source File with JFlex Maven Plugin 
       -->
       <plugin>
-        <groupId>de.jflex.maven.plugin</groupId>
+        <groupId>de.jflex</groupId>
         <artifactId>maven-jflex-plugin</artifactId>
-        <version>0.2</version>
         <executions>
           <execution>
             <phase>generate-sources</phase>

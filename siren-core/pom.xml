@@ -42,9 +42,9 @@
             <goals>
               <goal>generate</goal>
             </goals>
-            <configuration>
+            <!--configuration>
               <outputDirectory>src/main/java</outputDirectory>
-            </configuration>
+            </configuration-->
           </execution>
         </executions>
       </plugin>
